@@ -1,0 +1,8 @@
+Summary of `/lustre/orion/gen150/scratch/zye25/Agentic/docs/plans/2026-02-22-exp3-concurrency-sweep-implementation.md`:
+
+- **Goal:** Implement Experiment 3 as fixed-template LangGraph workflows while sweeping concurrent workflows `C`, with client concurrency control separated from backend queue proxy metrics.
+- **Tasks:**
+  - Implement fixed-worker + variable inflight concurrency.
+  - Separate client queueing vs backend proxy.
+  - Preserve graph and routing semantics.
+  - Define output contract and summaries.

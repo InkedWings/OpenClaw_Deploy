@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-03-30T19:34:50.456Z"
+  },
+  "models": {
+    "providers": {
+      "vllm": {
+        "baseUrl": "http://frontier03953:8011/v1",
+        "apiKey": "vllm-local",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "Qwen/Qwen2.5-32B-Instruct",
+            "name": "vLLM Qwen/Qwen2.5-32B-Instruct",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 8192,
+            "compat": {
+              "supportsStore": false,
+              "supportsDeveloperRole": false,
+              "supportsStrictMode": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/lustre/orion/gen150/scratch/zye25/Agentic/openclaw_latest"
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "allow": [
+      "read",
+      "edit",
+      "write",
+      "exec",
+      "process",
+      "sessions_list",
+      "sessions_history",
+      "sessions_send",
+      "sessions_spawn",
+      "session_status",
+      "memory_search",
+      "memory_get",
+      "web_fetch",
+      "pdf",
+      "subagents"
+    ],
+    "web": {
+      "search": {
+        "enabled": true
+      },
+      "fetch": {
+        "enabled": true
+      }
+    },
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "mode": "local"
+  }
+}

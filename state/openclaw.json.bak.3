@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-03-30T19:33:57.766Z"
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "/lustre/orion/gen150/scratch/zye25/Agentic/openclaw_latest"
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "allow": [
+      "read",
+      "edit",
+      "write",
+      "exec",
+      "process",
+      "sessions_list",
+      "sessions_history",
+      "sessions_send",
+      "sessions_spawn",
+      "session_status",
+      "memory_search",
+      "memory_get",
+      "web_fetch",
+      "pdf",
+      "subagents"
+    ],
+    "web": {
+      "search": {
+        "enabled": true
+      },
+      "fetch": {
+        "enabled": true
+      }
+    },
+    "exec": {
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "gateway": {
+    "mode": "local"
+  }
+}
